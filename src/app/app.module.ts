@@ -3,20 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { SaleComponent } from './pages/sale/sale.component';
+import { HeaderComponent } from './pages/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CartComponent
+    CartComponent,
+    SaleComponent,
+    HeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
